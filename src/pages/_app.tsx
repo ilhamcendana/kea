@@ -1,14 +1,11 @@
-import { PAGE_URL } from "@/helpers/constants";
-import LayoutAuth from "@/molecules/LayoutAuth";
-import { useAuthStore } from "@/store/useAuthStore";
-import "@/styles/globals.css";
-import { supabase } from "@/supabase";
-import { ConfigProvider, ThemeConfig } from "antd";
-import dayjs from "dayjs";
 import type { AppProps } from "next/app";
 import { Plus_Jakarta_Sans } from "next/font/google";
 import { useRouter } from "next/router";
 import { useEffect } from "react";
+import { PAGE_URL } from "@/helpers/constants";
+import LayoutAuth from "@/molecules/LayoutAuth";
+import "@/styles/globals.css";
+import { ConfigProvider, ThemeConfig } from "antd";
 
 const PlusJKT = Plus_Jakarta_Sans({
   variable: "--plus-jkt",
