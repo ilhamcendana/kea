@@ -20,8 +20,9 @@ const eslintConfig = [
       "@typescript-eslint/no-unused-expressions": "off",
       "react-hooks/exhaustive-deps": "off",
       "prefer-const": "off",
+      "@next/next/no-img-element":"off"
     },
   }),
 ];
 
-export default eslintConfig;
+module.exports = eslintConfig;
