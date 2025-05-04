@@ -1,3 +1,4 @@
+import { eventsTable } from "@/helpers/constants";
 import useInsertToDB from "@/hooks/useInsertToDB";
 import { Button, DatePicker, Form, Input, message } from "antd";
 import dayjs from "dayjs";
@@ -27,7 +28,7 @@ const ModalCreateEvent = ({ open, onClose }: IModalCreateEvent) => {
           autoComplete="off"
           onFinish={(values) => {
             mutateCreateEvent({
-              tableName: "events_dev",
+              tableName: eventsTable,
               payload: [
                 {
                   name: values?.name,

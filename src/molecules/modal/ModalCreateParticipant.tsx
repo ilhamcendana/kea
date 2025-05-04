@@ -1,6 +1,7 @@
 "use client";
 
 import TextInput from "@/atoms/TextInput";
+import { participantsTable } from "@/helpers/constants";
 import useFetchParticipant from "@/hooks/useFetchParticipant";
 import useInsertToDB from "@/hooks/useInsertToDB";
 import { useAuthStore } from "@/store/useAuthStore";
@@ -77,7 +78,7 @@ const ModalCreateParticipant = ({
               } else {
                 await form.validateFields();
                 await mutate({
-                  tableName: "participants_dev",
+                  tableName: participantsTable,
                   payload: [
                     { data: form.getFieldsValue(), eventID: event?.id },
                   ],

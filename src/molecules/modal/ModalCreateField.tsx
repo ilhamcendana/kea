@@ -1,5 +1,6 @@
 "use client";
 
+import { formFieldsTable } from "@/helpers/constants";
 import useFetchFields from "@/hooks/useFetchFields";
 import useInsertToDB from "@/hooks/useInsertToDB";
 import { useAuthStore } from "@/store/useAuthStore";
@@ -60,7 +61,7 @@ const ModalCreateField = ({
 
   const onCreateField = async () => {
     mutate({
-      tableName: "fields_dev",
+      tableName: formFieldsTable,
       payload: [
         {
           label: form.getFieldValue("label"),

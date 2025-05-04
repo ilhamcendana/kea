@@ -9,12 +9,12 @@ export const PAGE_URL = {
   LOGIN: "/login"
 }
 
-export const urlImage = process.env.NODE_ENV === "production" ? "https://cwwhcovvbxkoadyuhofj.supabase.co/storage/v1/object/public/prod/" :
+export const urlImage = process.env.NEXT_ENVIRONMENT === "production" ? "https://cwwhcovvbxkoadyuhofj.supabase.co/storage/v1/object/public/prod/" :
     "https://cwwhcovvbxkoadyuhofj.supabase.co/storage/v1/object/public/dev/";
 
-export const eventsTable = process.env.NODE_ENV === "production" ? "events_prod" : "events_dev";
-export const landingPageTable = process.env.NODE_ENV === "production" ? "landingpage_prod" : "landingpage_dev";
-export const formFieldsTable = process.env.NODE_ENV === "production" ? "fields_prod" : "fields_dev";
-export const participantsTable = process.env.NODE_ENV === "production" ? "participants_prod" : "participants_dev";
+export const eventsTable = process.env.NEXT_ENVIRONMENT === "production" ? "events_prod" : "events_dev";
+export const landingPageTable = process.env.NEXT_ENVIRONMENT === "production" ? "landingpage_prod" : "landingpage_dev";
+export const formFieldsTable = process.env.NEXT_ENVIRONMENT === "production" ? "fields_prod" : "fields_dev";
+export const participantsTable = process.env.NEXT_ENVIRONMENT === "production" ? "participants_prod" : "participants_dev";
 
-export const storageBucket = process.env.NODE_ENV === "production" ? "prod" : "dev";
+export const storageBucket = process.env.NEXT_ENVIRONMENT === "production" ? "prod" : "dev";
